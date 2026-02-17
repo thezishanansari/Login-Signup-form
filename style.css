@@ -1,0 +1,139 @@
+/* Reset some default styles */
+*{    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+/* Full Page Centering */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f9;
+
+}
+
+/* Container Styling */
+.container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 500px;
+}
+
+/* Title fields */
+.hero-title{
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Input field */
+.container-inside-box{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+label{
+    font-size: 1.1rem;
+    color: #333;
+}
+input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Flex row for password + forgot link*/
+.password-row {
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    color: #555;
+
+}
+.forgot-link {
+    font-size: 1rem;
+    color: rgb(21, 21, 228);
+    text-decoration: none;
+    cursor: pointer;
+}
+.forgot-link{
+    text-decoration: underline;
+}
+
+/* This CSS is for horizental line before-after or */
+.divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.divider::before,
+.divider::after{
+    content:  "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.divider:not(:empty)::before{
+    margin-right: 0.5rem;
+}
+.divider:not(:empty)::after{
+    margin-left: 0.5rem;
+}
+
+/* Button */
+.button-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+button {
+    width: 45%;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background: #222fe5;
+    color: oklab(99.405% 0 -0.00011);
+    transition: background 0.3s ease;
+}
+
+/* Social media button */
+.social-btn {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.facebook {
+    background: #222fe5;
+    color: oklab(99.405% 0 -0.00011);
+}
+.google {
+    background: #222fe5;
+    color: oklab(99.405% 0 -0.00011);
+    border: 1px solid #ccc;
+    margin-top: 0.1rem;
+}
+
+/* Confirmation warning */
+.warning {
+    margin: 1rem;
+}
