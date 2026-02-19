@@ -95,7 +95,7 @@ input{
     align-items: center;
     justify-content: space-between ;
 }
-button {
+.btn-inside {
     width: 45%;
     padding: 0.7rem;
     font-size: 1.05rem;
@@ -105,7 +105,7 @@ button {
     border-radius: 5px;
     background: #222fe5;
     color: oklab(99.405% 0 -0.00011);
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Social media button */
@@ -137,3 +137,107 @@ button {
 .warning {
     margin: 1rem;
 }
+
+/* Check Box */
+.container-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[type="checkbox"]{
+    opacity: 0;
+}
+[type="checkbox"]+label{
+    position: relative;
+    padding-left: 40px;
+    color: black;
+    cursor: pointer;
+}
+/* Base Box */
+[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid #e31708;
+    background: white;
+}
+/* Checked state */
+[type="checkbox"]:checked + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid black;
+}
+[type="checkbox"]:checked + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(Pictures/Check.png);
+    background-size: contain;
+    transform: scale(1);
+    opacity: 1;
+    transition: all .3s ease;
+}
+[type="checkbox"]:not(:checked) + label::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(Pictures/Check.png);
+    background-size: contain;
+    transform: scale(0);
+    opacity: 0;
+
+}
+
+/* Login Button  */
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.55px;
+}
+.login-btn-signup {
+    padding: 10px;
+    margin: 8px;
+    background: #222fe5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Login More Options */
+.more-login-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+
+}
+.login-btn-2 {
+    padding: 10px;
+    margin: 0.1rem;
+    color: white;
+    background: #222fe5;
+    border: none;
+    border-radius: 5px;
+    width: 33.33%;
+    font-size: 1rem;
+    cursor: pointer;
+
+} 
+
